@@ -17,6 +17,7 @@ public class Points : MonoBehaviour
     private void Start()
     {
         firing = GetComponent<Firing>();
+        RefreshText();
     }
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class Points : MonoBehaviour
     {
 
         score += points;
+        RefreshText();
     }
 
     public void RefreshText()
